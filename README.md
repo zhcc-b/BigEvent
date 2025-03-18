@@ -1,4 +1,4 @@
-# Spring Boot Learning Project - Big Event API
+# Spring Boot Project - Big Event API
 
 ## Project Overview
 This is a **Spring Boot** backend API project created for learning purposes. It provides RESTful APIs for user management, article category management, and article management, making it a great resource for practicing Spring Boot development.
