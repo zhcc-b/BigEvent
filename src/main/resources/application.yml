@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/big_event
+    username: postgres
+    password:
+#    hikari:
+#      minimum-idle: 10          # 最小空闲连接数
+#      maximum-pool-size: 50     # 最大连接数（适当增加，但不要超过 PostgreSQL max_connections）
+#      idle-timeout: 30000       # 空闲连接超时（30秒）
+#      max-lifetime: 1800000     # 连接最大存活时间（30分钟）
+#      connection-timeout: 3000  # 连接超时时间（3秒）
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1GB        # 允许上传的单个文件最大 1GB
+      max-request-size: 2GB     # 整个请求体最大 2GB
+      location: /Users/hsz/Downloads/Java_practice/SpringBoot/bigEventFiles/tempUpload # 临时存储目录，防止内存溢出
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名转换
